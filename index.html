@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
@@ -64,7 +66,7 @@
        you need—fast, secure, and hassle-free.</p>
     <div class="upload-box">
   <div class="upload-content">
-    <div class="upload-icon"><img src="./assets/images/Frame.png"></div>
+    <a href="#"><div class="upload-icon"><img src="./assets/images/Frame.png"></div></a>
     <p>Click or drag your files here to convert</p>
   </div>
 </div>
@@ -78,23 +80,23 @@
   <div class="row">
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="feature-card">
-        <img src="./assets/images/Frame (1).png">
+
+       
+        <i class="fas fa-sync-alt"></i>
         <h3>All-in-One Converter</h3>
         <p>Supports documents, images, audio, and videos.</p>
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="feature-card">
-         <img src="./assets/images/Frame (1).png" style="color:#fff";>
-
+<i class="fa-regular fa-clock"></i>
         <h3>Fast & Easy</h3>
         <p>Convert files quickly with an easy-to-use interface.</p>
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="feature-card">
-                 <img src="./assets/images/Frame (3).png" style="color:#fff";>
-
+<i class="fa-solid fa-shield-halved"></i>
         <h3>Secure</h3>
         <p>Files are encrypted and auto-deleted after conversion.</p>
       </div>
@@ -105,16 +107,14 @@
   <div class="row">
     <div class="col-lg-6 col-md-6 mb-4">
       <div class="feature-card">
-                 <img src="./assets/images/Frame (4).png" style="color:#fff";>
-
+<i class="fa-solid fa-compact-disc"></i>
         <h3>No Installation</h3>
         <p>Works on any device, no downloads needed.</p>
       </div>
     </div>
     <div class="col-lg-6 col-md-6 mb-4">
       <div class="feature-card">
-                 <img src="./assets/images/Frame (5).png" style="color:#fff";>
-
+<i class="fa-regular fa-file"></i>
         <h3>Multiple Formats</h3>
         <p>Supports 300+ file formats for all your conversion needs.</p>
       </div>
@@ -130,7 +130,9 @@
     <div class="steps">
 
       <div class="step">
-        <div class="icon-circle">⬆️</div>
+        <div class="icon-circle">
+          <img src="./assets/images/upload.png" alt="icon">
+        </div>
         <div class="text">
           <h3>1. Upload</h3>
           <p>Drag & drop or choose your file.</p>
@@ -138,7 +140,10 @@
       </div>
 
       <div class="step">
-        <div class="icon-circle">📄</div>
+        <div class="icon-circle">
+                    <img src="./assets/images/format.png" alt="icon">
+
+        </div>
         <div class="text">
           <h3>2. Format</h3>
           <p>Select the output type you need.</p>
@@ -146,7 +151,11 @@
       </div>
 
       <div class="step">
-        <div class="icon-circle">🔄</div>
+        <div class="icon-circle">          
+          <img src="./assets/images/convert.png" alt="icon">
+
+
+        </div>
         <div class="text">
           <h3>3. Convert</h3>
           <p>Click convert and wait a few seconds.</p>
@@ -154,7 +163,10 @@
       </div>
 
       <div class="step">
-        <div class="icon-circle">⬇️</div>
+        <div class="icon-circle">
+                    <img src="./assets/images/download.png" alt="icon">
+
+        </div>
         <div class="text">
           <h3>4. Download</h3>
           <p>Get your new file instantly.</p>
@@ -176,11 +188,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">JPG</div>
-          <span>to</span>
-          <div class="file">PNG</div>
+          <div class="file">
+            <img src="./assets/images/jpg.png" alt="icon">
+            
+            <p>JPG</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/png.png" alt="icon">
+            <p> PNG</p>
+          </div>
         </div>
-        <p>JPG PNG</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -189,11 +208,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">MP4</div>
-          <span>to</span>
-          <div class="file">GIF</div>
+          <div class="file">
+            <img src="./assets/images/MP4.png" alt="icon">
+            
+            <p>MP4</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/GIF.png" alt="icon">
+            <p>GIF</p>
+          </div>
         </div>
-        <p>MP4 GIF</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -202,11 +228,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">WAV</div>
-          <span>to</span>
-          <div class="file">MP3</div>
+          <div class="file">
+            <img src="./assets/images/WAV.png" alt="icon">
+            
+            <p>WAV</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/MP3.png" alt="icon">
+            <p> MP3</p>
+          </div>
         </div>
-        <p>WAV MP3</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -215,11 +248,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">DOC</div>
-          <span>to</span>
-          <div class="file">PDF</div>
+          <div class="file">
+            <img src="./assets/images/DOC.png" alt="icon">
+            
+            <p>DOC</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/PDF.png" alt="icon">
+            <p> PDF</p>
+          </div>
         </div>
-        <p>DOC PDF</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -228,11 +268,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">PNG</div>
-          <span>to</span>
-          <div class="file">JPG</div>
+          <div class="file">
+            <img src="./assets/images/png.png" alt="icon">
+            
+            <p>PNG</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/jpg.png" alt="icon">
+            <p> JPG</p>
+          </div>
         </div>
-        <p>PNG JPG</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -241,11 +288,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">GIF</div>
-          <span>to</span>
-          <div class="file">MP4</div>
+          <div class="file">
+            <img src="./assets/images/GIF.png" alt="icon">
+            
+            <p>GIF</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/MP4.png" alt="icon">
+            <p> MP4</p>
+          </div>
         </div>
-        <p>GIF MP4</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -254,11 +308,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">MP4</div>
-          <span>to</span>
-          <div class="file">MP3</div>
+          <div class="file">
+            <img src="./assets/images/MP4.png" alt="icon">
+            
+            <p>MP4</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/MP3.png" alt="icon">
+            <p> MP3</p>
+          </div>
         </div>
-        <p>MP4 MP3</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -267,11 +328,18 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="conversion-card">
         <div class="file-types">
-          <div class="file">PDF</div>
-          <span>to</span>
-          <div class="file">DOC</div>
+          <div class="file">
+            <img src="./assets/images/PDF.png" alt="icon">
+            
+            <p>PDF</p>
+          </div>
+          <span class="to">to</span>
+          <div class="file">
+            <img src="./assets/images/DOC.png" alt="icon">
+            <p> DOC</p>
+          </div>
         </div>
-        <p>PDF DOC</p>
+        
         <button class="convert-btn">Convert Now <i class="fas fa-sync-alt"></i></button>
       </div>
     </div>
@@ -297,10 +365,10 @@
       <div class="logo">Convertly</div>
       <p>Fast, secure, and easy file conversion — anytime, anywhere.</p>
       <div class="social-icons">
-        <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="youtube.svg" alt="YouTube"></a>
-        <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
 
