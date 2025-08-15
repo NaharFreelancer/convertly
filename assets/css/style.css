@@ -179,7 +179,7 @@ letter-spacing: var(--font-tracking-normal, 0);
 
 
 .file-converter{
-  padding: 60px 0 80px;
+  padding: 60px 0 20px;
 }
 
 .file-converter h1 {
@@ -205,7 +205,7 @@ line-height: var(--font-size-5xl, 48px); /* 100% */
 }
 .upload-box {
   padding:86px 0;
-  margin: 60px 0 40px;
+  margin: 60px 0 60px;
   border-radius: 32px;
   border: 2px dashed #1296E5;
   background: #F0F8FF;
@@ -236,6 +236,28 @@ font-weight: var(--font-weight-normal, 400);
 line-height: var(--font-leading-7, 28px); /* 140% */
 letter-spacing: var(--font-tracking-normal, 0);
 }
+
+
+/* CSS */
+.upload-info {
+  display: flex;
+  gap: 16px; /* space between pills */
+  justify-content: center; /* center align */
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  margin-bottom: 60px;
+}
+
+.badge {
+  background-color: #f0f7ff; /* light blue background */
+  color: #262626; /* black text */
+  padding: 15px 25px;
+  border-radius: 50px; /* fully rounded pill */
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap; /* keep text in one line */
+  display: inline-block;
+}
+
 
 /*---------------------------------------*/
 
@@ -627,7 +649,7 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 .footer {
   background: var(--color-neutral-950, #0A0A0A);
   color: #fff;
-  padding: 80px 40px 20px 40px;
+  padding: 80px 330px;
   font-size: 0.9rem;
   text-align: left;
 }
@@ -736,7 +758,7 @@ line-height: var(--font-leading-6, 24px); /* 150% */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 106px;
+  gap: 127px;
 }
 
 .subscribe-btn i{
