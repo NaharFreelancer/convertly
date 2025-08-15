@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon"/>
 </head>
 <body>
   <div class="container">
@@ -356,14 +357,22 @@
   <h2>Start <span>Converting Now</span></h2>
   <p>Upload your file, choose your format, and get the result in seconds—simple, secure, and free.</p>
   <button class="cta-btn">Upload and Convert</button>
+  <div class="angle_jpg">
+  <img src="./assets/images/angle-JPG.png" alt="icon">
+  </div>
+  <div class="angle_png">
+  <img src="./assets/images/angle-PNG.png" alt="icon">
+  </div>
 </section>
 
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-left">
-      <div class="logo">Convertly</div>
-      <p>Fast, secure, and easy file conversion — anytime, anywhere.</p>
+      <div class="logo">
+        <a href="#"><img src="./assets/images/footer-logo.png" alt="logo"></a>
+      </div>
+      <p>Fast, secure, and easy file conversion <br class="d-lg-block d-none"> — anytime, anywhere.</p>
       <div class="social-icons">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -388,11 +397,20 @@
       <a href="#">More</a>
     </div>
 
-    <div class="newsletter">
-      <h4>Newsletter</h4>
-      <input type="email" placeholder="Enter your mail address">
-      <button class="subscribe-btn">Subscribe Now</button>
-    </div>
+<div class="newsletter">
+  <h4>Newsletter</h4>
+  <div class="newsletter-input">
+    <input type="email " id="newsletter-email" placeholder="Enter your mail address ">
+    
+    <!-- <small id="newsletter-error" class="error-message"></small> -->
+  </div>
+  <button class="subscribe-btn">
+    <div class="subscribe">Subscribe Now</div>
+    <div>    <i class="fa-solid fa-arrow-right"></i>
+</div>
+  </button>
+</div>
+    
   </div>
 
   <div class="footer-bottom">
@@ -403,7 +421,6 @@
     </div>
   </div>
 </footer>
-
 
 
 

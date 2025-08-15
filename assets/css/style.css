@@ -524,18 +524,74 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(to right, #000, #001f33);
+  /* background: linear-gradient(to bottom, #000, #001f33); */
+  background: radial-gradient(circle at bottom center, #66ccff -50%, #001f33 80%);
+
+
   color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-  border-radius: 20px;
+  padding: 100px 80px;
   /* max-width: 900px; */
-  margin: 40px auto;
+  margin: 80px auto;
+  border-radius: 40px;
+  position: relative;
+}
+.angle_jpg{
+  position: absolute;
+    /* Positioning offsets */
+  top: 220px;               /* Distance from top edge */
+  right: auto;          /* Distance from right edge */
+  bottom: auto;         /* Distance from bottom edge */
+  left: 3px;              /* Distance from left edge */
+
+  /* Size */
+  width: 100px;         /* Element width */
+  height: 100px;        /* Element height */
+  min-width: auto;      
+  min-height: auto;
+  max-width: none;
+  max-height: none;
+
+  /* Layer order */
+  z-index: 1;           /* Controls stacking order */
+
+  /* Transform (optional for centering/movement) */
+  transform: translate(0, 0);
+
+  /* Overflow handling */
+  overflow: visible;    
+
+  /* Visual tweaks */
+  opacity: 1;           
+  pointer-events: auto; 
+}
+.angle_png {
+  position: absolute;
+  top: 0;          /* Stick to top edge */
+  right: 70px;        /* Stick to right edge */
+
+  /* Size */
+  width: 100px;
+  height: 100px;
+
+  /* Layer order */
+  z-index: 2;
+
+  /* Optional: fine-tune position if you want spacing from edges */
+  /* top: 20px;
+     right: 20px; */
+
+  /* Visual tweaks */
+  opacity: 1;
+  pointer-events: auto;
 }
 
+
 .cta h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: var(--color-white, #FFF);
+font-size: var(--font-size-5xl, 48px);
+font-weight: var(--font-weight-semibold, 600);
+line-height: var(--font-size-5xl, 48px); /* 100% */
 }
 
 .cta h2 span {
@@ -543,31 +599,35 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .cta p {
-  margin-bottom: 20px;
-  font-size: 1rem;
-  color: #ccc;
+  margin-bottom: 40px;
+  color: var(--color-white, #FFF);
+font-size: var(--font-size-base, 16px);
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .cta-btn {
-  background: #00a3ff;
+  background: #1296E5;
   color: #fff;
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 16px 20px;
+  border-radius: 50px;
   border: none;
-  font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
+font-size: var(--font-size-base, 16px);
+font-weight: var(--font-weight-medium, 500);
+line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .cta-btn:hover {
-  background: #0088cc;
+  background: #094b6d;
 }
 
 /* Footer */
 .footer {
-  background-color: #000;
+  background: var(--color-neutral-950, #0A0A0A);
   color: #fff;
-  padding: 40px 20px;
+  padding: 80px 40px 20px 40px;
   font-size: 0.9rem;
   text-align: left;
 }
@@ -575,36 +635,71 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 .footer-top {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-  gap: 20px;
-  max-width: 1100px;
+  gap: 50px;
+  /* max-width: 1100px; */
   margin: auto;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00a3ff;
-  margin-bottom: 10px;
+.footer-left p {
+  color: #FFF;
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
+  padding: 24px 0;
 }
 
-.social-icons a img {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
+.footer-bottom-links {
+ color: #FFF;
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 40px;
+}
+
+.social-icons i{
+  background: #171717;
+  padding: 16px;
+  border-radius: 100px;
+  font-size: 20px;
+  color: #fff;
+}
+.social-icons i:hover{
+  color: #007acc;
+}
+
+
 
 .footer-links h4,
 .newsletter h4 {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: #fff;
+  margin-bottom: 30px;
+  color: #FFF;
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
+.subscribe{
+  color: var(--color-white, #FFF);
+font-size: var(--font-size-base, 16px);
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-leading-6, 24px); /* 150% */
+}
+
 
 .footer-links a {
   display: block;
-  color: #ccc;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  color: #FFF;
+font-size: var(--font-size-base, 16px);
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .footer-links a:hover {
@@ -613,22 +708,41 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 
 .newsletter input {
   width: 100%;
-  padding: 10px;
-  border-radius: 25px;
-  border: 1px solid #00a3ff;
-  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-radius: 50px;
+  border: 1px solid #1296E5;
+  margin-bottom: 16px;
   background: transparent;
   color: #fff;
+font-size: var(--font-size-base, 16px);
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-leading-6, 24px); /* 150% */
+
 }
 
 .subscribe-btn {
   background: #00a3ff;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 5px 5px 5px 20px;
+  border-radius: 50px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+
+font-size: var(--font-size-base, 16px);
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-leading-6, 24px); /* 150% */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 106px;
+}
+
+.subscribe-btn i{
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 50px;
 }
 
 .subscribe-btn:hover {
@@ -638,11 +752,18 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
   margin: 20px auto 0;
   border-top: 1px solid #222;
   padding-top: 15px;
   flex-wrap: wrap;
+}
+.footer-bottom p{
+  color: #FFF;
+
+font-size: var(--font-size-base, 16px);
+font-style: normal;
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .footer-bottom-links a {
