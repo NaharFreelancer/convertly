@@ -14,14 +14,10 @@ body {
 }
 
 
-
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
-  /* padding: 0px 10%; */
-    
+  text-align: center;    
 }
 
 
@@ -51,17 +47,12 @@ body {
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-
-
       color: var(--color-neutral-800, #262626);
-
-    /* text-base/normal */
-    font-size: var(--font-size-base, 16px);
-    font-weight: var(--font-weight-normal, 400);
-    line-height: var(--font-leading-6, 24px); /* 150% */
-
-
+      font-size: var(--font-size-base, 16px);
+      font-weight: var(--font-weight-normal, 400);
+      line-height: var(--font-leading-6, 24px); /* 150% */
     }
+    
     .auth-buttons .login {
       color: #333;
     }
@@ -76,15 +67,6 @@ nav {
   align-items: center;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* or your navbar color */
-  z-index: 999; /* so it stays on top of other elements */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow for better visibility */
-}
 
 
 .dropdown {
@@ -96,16 +78,10 @@ nav {
   text-decoration: none;
   display: flex;
   align-items: center;
-color: var(--color-neutral-800, #262626);
-/* text-base/normal */
-font-family: var(--font-family-sans, Montserrat);
-font-size: var(--font-size-base, 16px);
-font-style: normal;
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
-letter-spacing: var(--font-tracking-normal, 0);
-
-
+  color: var(--color-neutral-800, #262626);
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .dropdown > a:hover {
@@ -175,6 +151,25 @@ letter-spacing: var(--font-tracking-normal, 0);
 }
 
 
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+
+/* ==================================================== */
 
 
 
@@ -185,10 +180,9 @@ letter-spacing: var(--font-tracking-normal, 0);
 .file-converter h1 {
       color: #333;
       text-align: center;
-/* text-5xl/bold */
-font-size: var(--font-size-5xl, 48px);
-font-weight: var(--font-weight-bold, 700);
-line-height: var(--font-size-5xl, 48px); /* 100% */
+      font-size: var(--font-size-5xl, 48px);
+      font-weight: var(--font-weight-bold, 700);
+      line-height: var(--font-size-5xl, 48px); /* 100% */
     }
 
 .file-converter h1 span {
@@ -209,7 +203,6 @@ line-height: var(--font-size-5xl, 48px); /* 100% */
   border-radius: 32px;
   border: 2px dashed #1296E5;
   background: #F0F8FF;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,11 +223,9 @@ line-height: var(--font-size-5xl, 48px); /* 100% */
 .upload-box p {
 color: var(--color-neutral-800, #262626);
 text-align: center;
-/* text-xl/normal */
 font-size: var(--font-size-xl, 20px);
 font-weight: var(--font-weight-normal, 400);
 line-height: var(--font-leading-7, 28px); /* 140% */
-letter-spacing: var(--font-tracking-normal, 0);
 }
 
 
@@ -349,7 +340,7 @@ letter-spacing: var(--font-tracking-normal, 0);
 }
 
 
-/* How It Works Section */
+/* =================How It Works Section======================== */
 .how-it-works {
   background: linear-gradient(81deg, var(--Primary-400, #3CB1F4) -16.2%, var(--color-purple-400, #C27AFF) 99.64%);
   color: #fff;
@@ -420,15 +411,8 @@ line-height: var(--font-leading-7, 28px); /* 155.556% */
 margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-  .steps {
-    grid-template-columns: 1fr;
-  }
-}
 
-
-
-/* Most-Used Conversions */
+/* ======================Most-Used Conversions==================== */
 .most-used-conversions {
   text-align: center;
   margin-top: 50px;
@@ -544,15 +528,11 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 
-/* CTA Section */
+/* ======================CTA Section======================== */
 .cta {
-  /* background: linear-gradient(to bottom, #000, #001f33); */
   background: radial-gradient(circle at bottom center, #66ccff -50%, #001f33 80%);
-
-
   color: #fff;
   padding: 100px 80px;
-  /* max-width: 900px; */
   margin: 80px auto;
   border-radius: 40px;
   position: relative;
@@ -611,9 +591,9 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 .cta h2 {
   margin-bottom: 12px;
   color: var(--color-white, #FFF);
-font-size: var(--font-size-5xl, 48px);
-font-weight: var(--font-weight-semibold, 600);
-line-height: var(--font-size-5xl, 48px); /* 100% */
+  font-size: var(--font-size-5xl, 48px);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: var(--font-size-5xl, 48px); /* 100% */
 }
 
 .cta h2 span {
@@ -623,9 +603,9 @@ line-height: var(--font-size-5xl, 48px); /* 100% */
 .cta p {
   margin-bottom: 40px;
   color: var(--color-white, #FFF);
-font-size: var(--font-size-base, 16px);
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .cta-btn {
@@ -636,16 +616,16 @@ line-height: var(--font-leading-6, 24px); /* 150% */
   border: none;
   cursor: pointer;
   transition: 0.3s;
-font-size: var(--font-size-base, 16px);
-font-weight: var(--font-weight-medium, 500);
-line-height: var(--font-leading-6, 24px); /* 150% */
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .cta-btn:hover {
   background: #094b6d;
 }
 
-/* Footer */
+/* ==================Footer=================== */
 .footer {
   background: var(--color-neutral-950, #0A0A0A);
   color: #fff;
@@ -708,9 +688,9 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 }
 .subscribe{
   color: var(--color-white, #FFF);
-font-size: var(--font-size-base, 16px);
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 
@@ -719,9 +699,9 @@ line-height: var(--font-leading-6, 24px); /* 150% */
   text-decoration: none;
   margin-bottom: 15px;
   color: #FFF;
-font-size: var(--font-size-base, 16px);
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .footer-links a:hover {
@@ -736,9 +716,9 @@ line-height: var(--font-leading-6, 24px); /* 150% */
   margin-bottom: 16px;
   background: transparent;
   color: #fff;
-font-size: var(--font-size-base, 16px);
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 
 }
 
@@ -750,11 +730,9 @@ line-height: var(--font-leading-6, 24px); /* 150% */
   border: none;
   cursor: pointer;
   transition: 0.3s;
-
-font-size: var(--font-size-base, 16px);
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
-
+  font-size: var(--font-size-base, 16px);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -781,11 +759,10 @@ line-height: var(--font-leading-6, 24px); /* 150% */
 }
 .footer-bottom p{
   color: #FFF;
-
-font-size: var(--font-size-base, 16px);
-font-style: normal;
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-leading-6, 24px); /* 150% */
+  font-size: var(--font-size-base, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-leading-6, 24px); /* 150% */
 }
 
 .footer-bottom-links a {

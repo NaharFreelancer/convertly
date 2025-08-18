@@ -12,3 +12,562 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .auth-buttons.desktop-auth {
+    display: none; /* hide desktop buttons */
+  }
+
+  .auth-buttons.mobile-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Animate hamburger into X */
+/* .hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+} */
+
+
+/* ==================== Responsive Design ==================== */
+
+/* For tablets and small laptops (max 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+    padding: 0 20px;
+  }
+
+  header {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+  .upload-box {
+    padding: 65px 0;
+  }
+  .file-converter {
+    padding: 50px 0 20px;
+}
+  .file-converter h1 {
+    font-size: 40px;
+  }
+  .file-converter p{
+    font-size: 15px;
+  }
+  .upload-info{
+    margin-bottom: 50px;
+  }
+  .badge {
+    font-size: 16px;
+  }
+  .features h2{
+    font-size: 40px;
+  }
+  .features p{
+    padding: 0px 0 20px
+  }
+.feature-card {
+    padding: 20px;
+}
+.feature-card i {
+    padding: 16px;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+.feature-card h3 {
+font-size: 22px;
+}
+
+.how-it-works {
+    margin: 60px 0;
+    padding-bottom: 75px;
+}
+.how-it-works h2 {
+    padding: 50px 0 40px;
+    font-size: 42px;
+}
+.icon-circle img {
+    padding: 10px;
+}
+
+.step h3 {
+    font-size: 20px;
+}
+.step p {
+    font-size: 16px;
+    line-height: 23px;
+}
+.most-used-conversions h2 {
+    font-size: 42px;
+    line-height: 36px;
+}
+.conversion-card {
+    padding: 20px 20px 20px;
+}
+.convert-btn {
+    padding: 10px 10px 10px 16px;
+    font-size:  15px;
+    line-height:  22px;
+}
+.view-more-btn {
+    padding: 12px 18px;
+}
+.cta {
+    padding: 60px 70px;
+    margin: 60px auto;
+}
+.angle_jpg{
+  display: none;
+}
+.angle_png{
+  display: none;
+}
+.cta h2 {
+  font-size: 42px;
+    line-height: 44px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+.subscribe-btn{
+  text-align: left;
+}
+  .footer {
+    padding: 50px 50px;
+  }
+.footer-links a {
+font-size: 15px;}
+
+
+}
+
+/* For tablets (max 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;   /* Keep logo and hamburger in one line */
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+    .file-converter {
+        padding: 40px 0 0px;
+    }  
+    .upload-box {
+        padding: 60px 0;
+    }
+    .badge {
+        font-size: 15px;
+    }
+
+.badge {
+  
+    padding: 12px 22px;
+}
+    .features h2 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .upload-info {
+        margin-bottom: 40px;
+    }
+    .feature-card i {
+        padding: 14px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .feature-card h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+  .res_768{
+    display: flex;
+    justify-content: center;
+
+  }
+.how-it-works {
+        margin: 50px 0;
+        padding-bottom: 65px;
+    }
+     .how-it-works h2 {
+        padding: 40px 0 30px;
+        font-size: 38px;
+    }
+
+.icon-circle img {
+    width: 50px;   /* adjust size */
+    height: 50px;  /* keep square */
+    object-fit: contain; /* keeps aspect ratio */
+    padding: 6px;  /* optional, adds spacing inside */
+}
+.step {
+      padding: 9px;
+}
+  .steps {
+    grid-template-columns: 1fr; /* stack steps */
+  }
+.most-used-conversions h2 {
+        font-size: 38px;
+        line-height: 30px;
+    }
+
+    .convert-btn {
+        width: 80%;
+        margin: auto;
+    }
+    .conversion-card {
+        padding: 20px 0px;
+    }
+
+    .view-more-btn {
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+        .cta {
+        margin: 50px auto;
+        padding: 50px 20px;
+
+    }
+
+    .cta h2 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+.cta-btn {
+    padding: 13px 20px;
+}
+.footer-links h4, .newsletter h4 {
+    margin-bottom: 20px;
+}
+.footer-links a {
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    padding: 12px 0;
+}
+
+.newsletter input {
+    padding: 14px 18px;
+}
+
+.subscribe-btn i {
+    padding: 15px;
+}
+.social-icons {
+    padding-bottom: 20px;
+}
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .cta {
+    padding: 60px 30px;
+  }
+}
+
+/* For mobile landscape (max 425px) */
+@media (max-width: 425px) {
+  .file-converter h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+    .upload-box {
+        padding: 40px 0;
+        margin: 50px 0;
+    }
+
+    .features h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+  .file-converter p,
+  .features p,
+  .most-used-conversions p,
+  .cta p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+    .how-it-works {
+        margin: 40px 0;
+        padding-bottom: 60px;
+    }
+        .step h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+      .step p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .icon-circle img {
+        width: 40px;
+        height: 40px;
+    }
+.how-it-works .container{
+          padding: 0 ;
+}
+.step {
+    padding: 9px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: var(--radius-full, 9999px);
+    background: #fff;
+    color: #000;
+    text-align: left;
+
+    /* force same height */
+    height: 80px;        /* adjust as needed */
+    box-sizing: border-box;
+}
+.how-it-works h2 {
+  padding: 30px 0;
+        font-size: 36px;
+    }
+  .feature-card {
+    padding: 20px;
+    text-align: center;
+  }
+    .most-used-conversions h2 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .convert-btn {
+        width: 75%;
+        margin: auto;
+    }
+    .view-more-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+        .cta {
+        margin: 40px auto;
+        padding: 40px 20px;
+    }
+.cta h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+   .cta-btn {
+        padding: 10px 20px;
+    }
+
+  .footer {
+    background: var(--color-neutral-950, #0A0A0A);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;      /* centers text */
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;  /* stack items vertically */
+    align-items: center;     /* center horizontally */
+    gap: 30px;               /* spacing between sections */
+}
+
+.footer-left p,
+.footer-links a,
+.footer-links h4,
+.newsletter h4,
+.newsletter input,
+.subscribe-btn,
+.footer-bottom {
+    text-align: center;      /* make sure text also centered */
+}
+
+.social-icons {
+    justify-content: center;
+}
+
+.social-icons i {
+    padding: 14px;
+}
+    .footer-left p {
+        padding: 10px 0 8px;
+    }
+
+.footer-bottom {
+   justify-content: center;
+}
+    .newsletter input {
+        padding: 12px 12px;
+        /* width: 80%; */
+    }
+    .subscribe-btn{
+      gap: 80px;
+    }
+    .subscribe-btn i {
+        padding: 12px;
+    }
+
+}
+
+/* For small mobile screens (max 375px) */
+@media (max-width: 375px) {
+  header .logo {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 13px;
+    margin: 0 5px;
+  }
+    .file-converter {
+        padding: 30px 0 0px;
+    }
+
+    .file-converter h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .file-converter p, .features p, .most-used-conversions p, .cta p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+        .upload-box {
+        padding: 35px 0;
+        margin: 43px 0;
+    }
+
+.upload-icon img {
+  width: 80%;
+}
+    .badge {
+        font-size: 14px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+  .convert-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+    .feature-card {
+        padding: 15px;
+    }
+    .feature-card h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .feature-card i {
+        padding: 12px;
+        margin-bottom: 18px;
+        font-size: 22px;
+    }
+
+        .how-it-works {
+        margin: 30px 0;
+        padding-bottom: 50px;
+    }
+        .how-it-works h2 {
+        padding: 22px 0;
+        font-size: 30px;
+    }
+        .step p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+        .step h3 {
+        font-size: 17px;
+        line-height: 19px;
+    }
+        .step {
+        padding: 6px 12px;
+        }
+      .most-used-conversions h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .file img{
+      width: 80%;
+    }
+
+  .view-more-btn,
+  .cta-btn,
+  .subscribe-btn {
+    /* width: 100%; */
+    text-align: center;
+    justify-content: center;
+  }
+.view-more-container {
+    margin-top: 15px;
+}
+    .cta h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+        .cta-btn {
+        padding: 8px 18px;
+    }
+    .footer-top {
+        gap: 25px;
+    }
+        .footer-left p {
+        font-size: 15px;
+    }
+
+}
