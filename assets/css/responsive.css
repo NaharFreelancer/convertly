@@ -569,5 +569,11 @@ font-size: 15px;}
         .footer-left p {
         font-size: 15px;
     }
+        .newsletter input {
+        padding: 10px 10px;
+    }
+        .subscribe-btn i {
+        padding: 10px;
+    }
 
 }
