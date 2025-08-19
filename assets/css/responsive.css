@@ -577,3 +577,254 @@ font-size: 15px;}
     }
 
 }
+
+
+/* ======================second page responsive design================== */
+/* =================== RESPONSIVE DESIGN =================== */
+
+/* =================== RESPONSIVE DESIGN =================== */
+
+/* 🖥️ 1024px (large tablets / small laptops) */
+@media (max-width: 1024px) {
+  .file-item {
+    padding: 16px 20px;
+  }
+
+  .file-info img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .file-action {
+    gap: 10px;
+  }
+
+  .remove_button {
+    padding-left: 40px;
+  }
+
+  .convert-container {
+    justify-content: center;
+  }
+
+
+
+
+}
+
+/* 📱 768px (tablets portrait) */
+@media (max-width: 768px) {
+  .file-item {
+    flex-direction: row;        /* keep them side by side */
+    flex-wrap: wrap;            /* allow wrapping if space is tight */
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .file-info {
+    flex: 1 1 auto;             /* let it shrink & grow */
+    min-width: 200px;           /* keeps file info readable */
+  }
+
+  .file-action {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .file-action select {
+    max-width: 100px;           /* limit dropdown width */
+  }
+
+.file_description .file-name {
+    font-size:15px;
+}
+.remove-btn {
+    padding: 4px 10px;
+    font-size: 16px;
+}
+.file-info img {
+        width: 90px;
+        height: 60px;
+    }
+.upload-more {
+    display: flex;
+    padding: 16px;
+}
+
+
+}
+
+
+/* 📱 425px (mobile large) */
+@media (max-width: 425px) {
+  .file-converter h1 {
+    font-size: 28px;
+  }
+
+  .file-converter p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .file-info img {
+    width: 70px;
+    height: 50px;
+  }
+
+  .file_description .file-name {
+    font-size: 16px;
+  }
+
+  .file_description .file-size {
+    font-size: 13px;
+  }
+
+  .file-action label {
+    display: none; /* hide label for space */
+  }
+
+  .file-action select,
+  .custom-dropdown .dropdown-btn {
+    font-size: 14px;
+    padding: 6px 28px 6px 10px;
+  }
+
+  .convert-btn-2 {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+.file-item {
+    flex-direction: row;     
+    flex-wrap: nowrap;       /* force in one line */
+    align-items: center;
+    gap: 8px;
+    padding: 10px;           /* reduce padding */
+  }
+
+  .file-info img {
+    width: 70px;
+    height: 50px;           /* smaller preview */
+  }
+
+  .file_description .file-name {
+    font-size: 14px;
+  }
+  .file_description .file-size {
+    font-size: 12px;
+  }
+
+  .file-action label {
+    display: none;           /* hide text "Convert to" */
+  }
+
+  .file-action select {
+    max-width: 90px;         /* shrink dropdown */
+    font-size: 14px;
+    padding: 6px 26px 6px 10px;
+  }
+
+  .remove_button {
+    padding-left: 10px;      /* bring close */
+  }
+
+  .remove-btn {
+    padding: 4px 10px;
+    font-size: 16px;
+  }
+    .upload-more {
+        display: flex;
+        padding: 12px;
+    }
+.convert-container {
+    margin-top: 20px;
+}
+
+}
+
+/* 📱 375px (small mobiles like iPhone SE) */
+@media (max-width: 375px) {
+  .file-converter h1 {
+    font-size: 24px;
+  }
+
+  .file-info {
+    gap: 8px;
+  }
+
+  .file-info img {
+    width: 60px;
+    height: 45px;
+  }
+
+  .file_description .file-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .file_description .file-size {
+    font-size: 12px;
+  }
+
+  .file-action select,
+  .custom-dropdown .dropdown-btn {
+    font-size: 13px;
+    padding: 6px 24px 6px 10px;
+  }
+
+  .upload-more {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .convert-btn-2 {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+      .upload-more {
+        padding: 10px;
+    }
+.file-item {
+    flex-direction: column;  /* stack */
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .file-info {
+    width: 100%;             /* take full width */
+    justify-content: flex-start;
+  }
+
+  .file-action {
+    width: 100%;             /* push dropdown + button in one row */
+    justify-content: space-between;
+  }
+
+  .file-action label {
+    display: inline-block;   /* show label again */
+    font-size: 13px;
+  }
+
+  .file-action select {
+    width: 30%;
+    max-width: none;          /* full width */
+    font-size: 14px;
+    padding: 8px 30px 8px 12px;
+  }
+
+  .remove_button {
+    padding-left: 0;
+  }
+
+  .remove-btn {
+    padding: 5px 12px;
+    font-size: 16px;
+  }
+
+
+}
