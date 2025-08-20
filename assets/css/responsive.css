@@ -826,5 +826,87 @@ font-size: 15px;}
     font-size: 16px;
   }
 
-
 }
+
+
+/* ======================4th page responsive design============================== */
+/* ==================== Responsive ==================== */
+
+/* --- Tablets / small laptops --- */
+@media (max-width: 1024px) {
+  .cf-wrap {
+    gap: 28px;
+  }
+
+  .cf-left .first_img {
+    top: -140px;
+    right: 40px;
+  }
+  .cf-left .second_img {
+    right: -200px;
+    bottom: -150px;
+  }
+  .cf-left .third_img {
+   right: 25px;
+        bottom: -131px;
+  }
+
+  .cf-card.cf-small { width: 160px; height: 160px; }
+  .cf-card.cf-large { width: 200px; height: 200px; }
+
+.cf-upload-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+ }
+ .cf-section {
+    padding: 30px 20px;
+}
+.cf-btn{
+  padding: 10px 16px;
+}
+.cf-benefits{
+  margin: 0;
+}
+.cf-benefits li {
+    padding-left: 16px;
+}
+}
+
+/* --- Tablets portrait / iPad mini, etc. --- */
+@media (max-width: 768px) {
+  .cf-wrap {
+    grid-template-columns: 1fr; /* stack preview + upload vertically */
+    gap: 40px;
+    justify-items: center;
+  }
+      .cf-benefits li {
+        padding-left: 24px;
+    }
+
+  .cf-left {
+    position: relative;
+    min-height: 360px; /* keep enough height for overlap */
+  }
+
+  .cf-left .first_img {
+    top: 0px;
+        right: 56px;
+  }
+  .cf-left .second_img {
+    left: 0;
+    bottom: 0;
+  }
+  .cf-left .third_img {
+            right: 23px;
+        bottom: 75px;
+    }
+ 
+
+  .cf-card.cf-small { width: 160px; height: 160px; }
+  .cf-card.cf-large { width: 220px; height: 220px; }
+
+  .cf-upload-card h3 {
+    font-size: 24px;
+  }
+ }
+

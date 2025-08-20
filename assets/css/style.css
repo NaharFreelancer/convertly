@@ -1085,72 +1085,61 @@ justify-content: right;
   padding: 40px 20px;
 }
 .cf-wrap {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
 }
-@media (max-width: 900px) {
-  .cf-wrap {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-}
+
+
 
 /* ====== Left preview cards ====== */
-.cf-left {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  justify-content: space-around;
+/* --- Force diagonal preview layout --- */
+.cf-left{
+  position: relative !important;
+  display: block !important;        
+  /* max-width: 640px;                 
+  min-height: 360px;                 */
+  margin: 0 auto;
 }
 
-.cf-left img:first-child {
-  transform: translateY(-15px); 
+/* place wrappers */
+.cf-left .first_img{
+  position: absolute;
+  top: -176px;
+        right: 75px;
 }
-.cf-card {
-  position: relative;
-  border-radius: 22px;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
-  background: linear-gradient(135deg, #c7d7ea 0%, #9fb5cf 60%);
+
+.cf-left .second_img{
+  position: absolute;
+  right: -280px;
+    bottom: -192px;
 }
-.cf-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.cf-left .third_img{
+  position: absolute;
+      right: 50px;
+    bottom: -160px;
 }
-.cf-small img { width: 220px; height: 200px; }
+
+
+
+/* size the FIGUREs (not the <img>) */
+.cf-card{ border-radius: 22px; overflow: hidden; }
+.cf-card.cf-small{ width: 220px; height: 220px; }
+.cf-card.cf-large{ width: 296px; height: 296px; }
+
+/* images fill their cards */
+.cf-card img{ width: 100%; height: 100%; object-fit: cover; display:block; }
+
+
+
+
+.cf-small img { width: 220px; height: 220px; }
 .cf-large img { width: 296px; height: 296px; }
 
-/* blue wedge corner */
-.cf-card::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 60%;
-  height: 60%;
-  background: linear-gradient(135deg, transparent 48%, #1296E5 50%);
-}
-.cf-badge {
-  position: absolute;
-  right: 12px;
-  bottom: 10px;
-  z-index: 1;
-  background: #1296E5;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 8px;
-}
+
 
 /* ====== Right upload card ====== */
 .cf-upload-card {
